@@ -12,11 +12,6 @@ use Generated\Shared\Transfer\QuoteTransfer;
 
 class ShipmentExpander implements ShipmentExpanderInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
-     *
-     * @return \Generated\Shared\Transfer\QuoteTransfer
-     */
     public function expandQuoteShipmentWithMerchantReference(QuoteTransfer $quoteTransfer): QuoteTransfer
     {
         foreach ($quoteTransfer->getItems() as $itemTransfer) {
@@ -26,11 +21,6 @@ class ShipmentExpander implements ShipmentExpanderInterface
         return $quoteTransfer;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ItemTransfer $itemTransfer
-     *
-     * @return \Generated\Shared\Transfer\ItemTransfer
-     */
     protected function expandItemShipmentWithMerchantReference(ItemTransfer $itemTransfer): ItemTransfer
     {
         $shipmentTransfer = $itemTransfer->getShipment();

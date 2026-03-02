@@ -30,9 +30,6 @@ class ExpandQuoteShipmentWithMerchantReferenceTest extends Unit
      */
     protected MerchantShipmentsRestApiBusinessTester $tester;
 
-    /**
-     * @return void
-     */
     public function testExpandQuoteShipmentWithMerchantReferenceExpandsItemShipmentWithMerchantReference(): void
     {
         // Arrange
@@ -54,9 +51,6 @@ class ExpandQuoteShipmentWithMerchantReferenceTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testExpandQuoteShipmentWithMerchantReferenceDoesNotExpandItemShipmentWithoutShipment(): void
     {
         // Arrange

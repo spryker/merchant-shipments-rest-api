@@ -16,9 +16,6 @@ use Spryker\Zed\MerchantShipmentsRestApi\Business\Expander\ShipmentExpanderInter
  */
 class MerchantShipmentsRestApiBusinessFactory extends AbstractBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\MerchantShipmentsRestApi\Business\Expander\ShipmentExpanderInterface
-     */
     public function createShipmentExpander(): ShipmentExpanderInterface
     {
         return new ShipmentExpander();
